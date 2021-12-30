@@ -1,9 +1,10 @@
-from logging import getLogger
-from typing import Callable
-from discord.ext import commands
-from dotenv import load_dotenv
 import asyncio
 import os
+from logging import getLogger
+from typing import Callable
+
+from discord.ext import commands
+from dotenv import load_dotenv
 
 
 class Relean(commands.Bot):
