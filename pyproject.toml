@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mebae"
+version = "0.1.0"
+description = ""
+authors = ["CutieRei <cutierei.py@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.3"
+"discord.py" = {git = "https://github.com/Rapptz/discord.py"}
+"python-dotenv" = "^0.19.2"
+jishaku = "^2.3.2"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
