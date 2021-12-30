@@ -10,14 +10,14 @@ class Relean(commands.Bot):
     def __init__(
         self,
         command_prefix,
-        help_command=commands.HelpCommand(command_attrs={"aliases": ["halp"]}),
+        help_command=None,
         description=None,
         logger=None,
         **options,
     ):
         super().__init__(
             command_prefix,
-            help_command=help_command,
+            help_command=help_command or commands.HelpCommand(command_attrs={"aliases": ["halp"]}),
             description=description,
             **options,
         )
