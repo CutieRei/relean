@@ -2,7 +2,6 @@ import asyncio
 import os
 from logging import getLogger
 from typing import Callable
-
 from discord.ext import commands
 from dotenv import load_dotenv
 
@@ -18,7 +17,8 @@ class Relean(commands.Bot):
     ):
         super().__init__(
             command_prefix,
-            help_command=help_command or commands.HelpCommand(command_attrs={"aliases": ["halp"]}),
+            help_command=help_command
+            or commands.HelpCommand(command_attrs={"aliases": ["halp"]}),
             description=description,
             **options,
         )

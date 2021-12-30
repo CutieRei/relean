@@ -1,10 +1,8 @@
 import logging
 import sys
+import click
 from copy import copy
 from typing import Optional
-
-import click
-
 
 COLOURED_LEVEL = {
     logging.NOTSET: "{}".format(click.style("LOG", fg="bright_white")),

@@ -1,6 +1,4 @@
 from logging import getLogger, INFO
-
-from logs import ClickStreamHandler, ColouredFormatter
 from logs import ClickStreamHandler, ColouredFormatter
 from bot import get
 
