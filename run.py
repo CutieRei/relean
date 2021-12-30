@@ -3,6 +3,7 @@ from logging import getLogger, INFO
 from logs import ClickStreamHandler, ColouredFormatter
 from bot import get
 
+
 def main():
     logger = getLogger(__name__)
     handler = ClickStreamHandler()
@@ -11,6 +12,7 @@ def main():
     logger.addHandler(handler)
     _, run = get(logger)
     run()
+
 
 if __name__ == "__main__":
     main()
